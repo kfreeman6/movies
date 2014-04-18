@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<h1>Movie Titles</h1>
+
+<ul>
+<% all_movies = Movie.read %>
+<% all_movies.each do |movie| %>
+   <li><%= movie["title"] %> (<%= movie["year"] %>) </li>
+<% end %>
+</ul>
+
+
+<table border="1" style="width:300px">
+<tr>
+<td><%= movie["title"] %></td>
+<td><%= movie["year"] %></td>
+
+</tr>
+
+</table>
+
+
+
+</html>
